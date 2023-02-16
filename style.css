@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Kumbh+Sans:wght@400;700&family=Montserrat:wght@500;700&family=Oswald:wght@400;500;600;700&family=Overpass:wght@400;700&family=Roboto:wght@500;700&display=swap");
+
+/* CSS RESET AND VARIABLES */
+:root {
+  --color-primary-dark: hsl(238, 29%, 16%);
+  --color-primary-red: hsl(14, 88%, 65%);
+  --color-background-violet: hsl(273, 75%, 66%);
+  --color-background-blue: hsl(240, 73%, 65%);
+  --color-secondary-very-dark: hsl(237, 12%, 33%);
+  --color-secondary-dark: hsl(240, 6%, 50%);
+  --color-secondary-light: hsl(240, 5%, 91%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(
+    var(--color-background-violet),
+    var(--color-background-blue)
+  );
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  font-family: "Kumbh Sans", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 5px;
+  color: var(--color-secondary-light);
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--color-secondary-light);
+}
+
+/* --------------- FAQ ACCORDIAN CARD ---------------- */
+.faq-accordian-card {
+  max-width: 920px;
+  width: 100%;
+  height: 508px;
+  margin: 0 auto;
+  background-color: var(--color-secondary-light);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.col {
+  position: relative;
+  height: 100%;
+}
+
+.col1 {
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.col1 .img-bg {
+  width: 966px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: cover;
+  background-position: -579px -295px;
+}
+
+.col1 .img-box {
+  position: absolute;
+  top: 58.5%;
+  left: -65%;
+  transform: translate(99%, -50%);
+}
+
+.img-woman {
+  width: 472px;
+  height: 359px;
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  background: url("images/illustration-woman-online-desktop.svg") 0 0 no-repeat
+    scroll transparent;
+  background-size: cover;
+  background-position: -85px 0px;
+}
+
+.col2 {
+  width: 50%;
+}
+
+.accordian-panel {
+  display: none;
+}
