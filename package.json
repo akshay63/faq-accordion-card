@@ -1,0 +1,19 @@
+{
+  "name": "faq-accordion-card",
+  "version": "1.0.0",
+  "description": "FAQ Accordian Card",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akshay63/faq-accordion-card.git"
+  },
+  "author": "Akshay Meshram",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akshay63/faq-accordion-card/issues"
+  },
+  "homepage": "https://github.com/akshay63/faq-accordion-card#readme"
+}
