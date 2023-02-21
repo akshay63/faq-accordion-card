@@ -49,10 +49,6 @@ In this project, I have learned how Event Delegation can be used efficiently usi
 
 To see how you can add code snippets, see below:
 
-```html
-
-```
-
 ```css
 .accordian::-webkit-scrollbar {
   width: 10px;
