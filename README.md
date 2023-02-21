@@ -84,7 +84,7 @@ There are lot of CSS that is need to be corrected because of my responsive CSS c
 
 ### Useful resources
 
-- [For Adding style to scrollbars](https://css-tricks.com/the-current-state-of-styling-scrollbars-in-css/) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [For Adding style to scrollbars](https://css-tricks.com/the-current-state-of-styling-scrollbars-in-css/) - to style scrollbar using modern CSS
 
 ## Author
 
