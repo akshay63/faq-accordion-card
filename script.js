@@ -16,8 +16,6 @@ function accordian(evt) {
   } else {
     panelArrIcon.style.transform = "rotate(0deg)";
   }
-
-  console.log();
 }
 
 ul.addEventListener("click", accordian, false);

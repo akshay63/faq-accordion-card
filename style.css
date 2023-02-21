@@ -53,6 +53,11 @@ a {
 }
 .attribution a {
   color: var(--color-secondary-light);
+  text-decoration: underline;
+}
+
+.attribution a:hover {
+  color: var(--color-primary-dark);
 }
 
 ul {
@@ -69,6 +74,7 @@ ul {
   border-radius: 20px;
   display: flex;
   align-items: center;
+  box-shadow: 0 1rem 2rem 3px rgba(0, 0, 0, 0.3);
 }
 
 .col {
@@ -77,7 +83,7 @@ ul {
 }
 
 .col1 {
-  margin-right: 30px;
+  margin-right: 29px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -126,14 +132,20 @@ ul {
 .col2 h1 {
   font-size: 3.2rem;
   margin-bottom: 3rem;
+  color: var(--color-primary-dark);
 }
 
 .accordian {
   max-width: 350px;
+  height: 252px;
   color: var(--color-secondary-dark);
   overflow: auto;
   overflow-x: hidden;
   scrollbar-color: var(--color-background-violet) var(--color-background-blue);
+}
+
+.accordian li:first-child {
+  padding-top: 0px;
 }
 
 .accordian::-webkit-scrollbar {
@@ -186,7 +198,7 @@ ul {
 }
 
 .accordian-control span {
-  padding-right: 15px;
+  padding-right: 6px;
 }
 
 .accordian-panel {
@@ -201,4 +213,80 @@ ul {
 
 /* Mobile Design */
 @media only screen and (max-width: 920px) {
+  body {
+    flex-direction: column;
+  }
+
+  .faq-accordian-card {
+    max-width: 350px;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 150px;
+  }
+
+  .col1 {
+    margin-right: auto;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .col1 .img-bg {
+    width: 252px;
+    height: 109px;
+    position: relative;
+    background-image: url(images/bg-pattern-mobile.svg);
+    background-position: center;
+  }
+
+  .col1 .img-box {
+    display: none;
+  }
+
+  .img-woman {
+    width: 250px;
+    height: 200px;
+    top: -16px;
+    left: 50%;
+    background: url("images/illustration-woman-online-mobile.svg") 0 0 no-repeat
+      scroll transparent;
+    background-position: center;
+    transform: translate(-50%, -50%);
+  }
+
+  .col2 {
+    width: 100%;
+    padding: 25px;
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+
+  .col2 h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .accordian {
+    max-width: 100%;
+  }
+
+  .accordian li:first-child {
+    padding-top: 0px;
+  }
+
+  .accordian-control {
+    font-size: 13px;
+  }
+
+  .accordian-panel.open {
+    font-size: 12px;
+    padding-right: 13px;
+  }
+
+  .attribution {
+    position: relative;
+    bottom: auto;
+    margin-top: 20px;
+  }
 }
